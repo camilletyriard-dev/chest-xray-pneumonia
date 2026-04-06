@@ -20,11 +20,11 @@ The core research question is: **how do individual design choices — class-weig
 | Model | Val Acc | NORMAL Acc | PNEUMONIA Acc |
 |---|---|---|---|
 | Baseline CNN (SGD) | 96.07% | 90.51% | 97.90% |
-| + Adam only | ~96.5% | — | — |
+| + Adam only | 96.58% | — | — |
 | + BatchNorm only | 97.95% | — | — |
 | + Class weights only | 93.16% | 97.47% | — |
-| **Improved CNN (all three)** | **97.61%** | **91.19%** | **97.90%** |
-| Improved CNN (test set) | ~96.8% | ~91.2% | ~97.9% |
+| Improved CNN (all three) | 97.61% | 96.84% | 97.89% |
+| Improved CNN (test set) | 96.08% | 91.19% | 97.9% |
 
 > **Clinical note:** the class-weights experiment reveals a core tension in medical AI — optimising for the minority class (NORMAL / true negative) at the cost of overall accuracy. In a screening context, this trade-off requires explicit clinical input, not just a loss-function default.
 
