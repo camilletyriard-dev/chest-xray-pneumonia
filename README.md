@@ -190,14 +190,3 @@ Adam's adaptive per-parameter learning rates allow faster convergence on this re
   note         = {MSc Artificial Intelligence, Deep Learning coursework}
 }
 ```
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
----
-
-*Part of a broader research portfolio on robust AI for clinical decision support.*
-*Related projects: [Diffusion MRI Microstructure Modelling](#) · [Parameter-Efficient LLM Fine-Tuning](#)*
