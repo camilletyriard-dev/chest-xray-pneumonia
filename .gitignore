@@ -1,0 +1,44 @@
+# Data (never commit raw images)
+data/
+*.jpg
+*.jpeg
+*.png
+*.zip
+
+# Model checkpoints (large files — use Git LFS or HF Hub)
+results/*.pth
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
+
+# Weights & Biases
+wandb/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+venv/
+env/
