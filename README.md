@@ -12,7 +12,7 @@
 
 This project develops and systematically evaluates convolutional neural networks for binary pneumonia detection from chest X-rays, using the [Kaggle Chest X-Ray (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) dataset.
 
-The core research question is: **how do individual design choices — class-weighted loss, batch normalisation, and the Adam optimiser — each contribute to performance under realistic clinical class imbalance?** Each improvement is ablated independently before being combined into a final model.
+The core research question is: **how do individual design choices; class-weighted loss, batch normalisation, and the Adam optimiser, each contribute to performance under realistic clinical class imbalance?** Each improvement is ablated independently before being combined into a final model.
 
 ### Key results
 
@@ -25,7 +25,7 @@ The core research question is: **how do individual design choices — class-weig
 | Improved CNN (all three) | 97.61% | 96.84% | 97.89% |
 | Improved CNN (test set) | 96.08% | 91.19% | 97.9% |
 
-> **Clinical note:** the class-weights experiment reveals a core tension in medical AI — optimising for the minority class (NORMAL / true negative) at the cost of overall accuracy. In a screening context, this trade-off requires explicit clinical input, not just a loss-function default.
+> **Clinical note:** the class-weights experiment reveals a core tension in medical AI: optimising for the minority class (NORMAL / true negative) at the cost of overall accuracy. In a screening context, this trade-off requires explicit clinical input, not just a loss-function default.
 
 ---
 
@@ -176,16 +176,3 @@ Normalising activations per mini-batch accelerates convergence, acts as a mild r
 ### Adam vs SGD
 Adam's adaptive per-parameter learning rates allow faster convergence on this relatively small dataset, explaining the improved validation stability without hyperparameter tuning.
 
----
-
-## Citation
-
-```bibtex
-@misc{tyriard2025chestxray,
-  author       = {Tyriard, Camille},
-  title        = {Chest X-ray Pneumonia Classification: Ablation of BatchNorm, Adam, and Class Weights},
-  year         = {2025},
-  institution  = {University College London},
-  note         = {MSc Artificial Intelligence, Deep Learning coursework}
-}
-```
